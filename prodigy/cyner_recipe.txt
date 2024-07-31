@@ -1,0 +1,7 @@
+prodigy rel.manual secruity_re blank:en ./data.json --label attack,exploit,compromise,steal --span-label malware,organization,system,vulnerability,ioc --wrap --add-ents
+
+# example
+prodigy dep.correct deps_news en_core_web_sm ./dataset/news_headlines.jsonl --label ROOT,csubj,nsubj,dobj,pboj
+
+# test
+prodigy rel.manual deps_news blank:en ./dataset/news_headlines.jsonl --label ROOT,csubj,nsubj,dobj,pboj --label attack,exploit,compromise,steal --span-label malware,organization,system,vulnerability,ioc --wrap
